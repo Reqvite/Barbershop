@@ -1,7 +1,7 @@
 const spanRef = document.querySelectorAll('.benefits-list__numbers')
 
 let intervalId = null;
-elNumber = 0;
+ let elNumber = 0;
 
 function checkDevice() {
        if (/Android|webOS|iPhone|iPad|iPod|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
