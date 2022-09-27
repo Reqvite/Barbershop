@@ -1,22 +1,23 @@
 //utils
-@import "./utils/variables";
-@import "./utils/visually-hidden";
-@import "./utils/mixin";
-@import "./utils/_breakpoints";
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixin';
+@import './utils/_breakpoints';
 
 // base styles
-@import "./base/reset";
-@import "./base/container";
-@import "./base/body-section";
+@import './base/reset';
+@import './base/container';
+@import './base/body-section';
 
 //components
-@import "./components/btn";
-@import "./components/titles";
+@import './components/btn';
+@import './components/titles';
 
 //layouts
-@import "./layouts/header";
-@import "./layouts/hero";
-@import "./layouts/about";
-@import "./layouts/prices";
-@import "./layouts/benefits";
-@import "./layouts/masters";
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/prices';
+@import './layouts/benefits';
+@import './layouts/masters';
+@import './layouts/examples';
