@@ -1,0 +1,67 @@
+.section-prices {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.439), rgb(0, 0, 0)),
+    url(../img/prices/imgtablet.jpg);
+  background-repeat: no-repeat;
+}
+
+.section-prices__pre-title {
+  color: $preTitle-color2;
+  padding-left: 50px;
+  position: relative;
+}
+.section-prices__pre-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: -10px;
+
+  height: 1px;
+  width: 45px;
+  background-color: $preTitle-color2;
+}
+
+.section-prices__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-prices__list {
+  background-color: rgba(1, 7, 42, 0.141);
+  padding: 30px 40px;
+  margin-top: 44px;
+  max-width: 400px;
+}
+.prices-list__item {
+  position: relative;
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+}
+.prices-list__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+.prices-list__item:not(:first-child) {
+  margin-top: 20px;
+}
+.prices-list__text {
+  position: relative;
+}
+.price {
+  margin-left: auto;
+}
+
+.section-prices__btn {
+  margin-top: 50px;
+  color: white;
+}

@@ -1,0 +1,43 @@
+.section-masters {
+  background-color: $mastersBg-color;
+}
+
+.section-masters__pre-title {
+  padding-left: 50px;
+  position: relative;
+}
+
+.section-masters__pre-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: -10px;
+
+  height: 1px;
+  width: 45px;
+  background-color: #303030;
+}
+.section-masters__title {
+  color: $h2-title-color;
+}
+
+.section-masters__list {
+  margin-top: 44px;
+}
+.masters-list__item {
+}
+.masters-list__img {
+}
+.masters-list-info {
+}
+.masters-list__name {
+}
+.masters-list__level {
+}
+.social-list {
+}
+.social-list__item {
+}
+.social-list__img {
+}
