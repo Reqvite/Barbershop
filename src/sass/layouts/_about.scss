@@ -1,18 +1,21 @@
 .section-about {
   padding-bottom: 90px;
-  @media screen and (min-width: 420px) {
-    padding-top: 60px;
-  }
-  @media screen and (min-width: 470px) {
-    padding-top: 84px;
-  }
+  // @media screen and (min-width: 280px) {
+  //   padding-top: 60px;
+  // }
+  // @media screen and (min-width: 420px) {
+  //   padding-top: 60px;
+  // }
+  // @media screen and (min-width: 470px) {
+  //   padding-top: 84px;
+  // }
 
-  @media screen and (min-width: 470px) {
-    padding-top: 120px;
-  }
-  @media screen and (min-width: 530px) {
-    padding-top: 155px;
-  }
+  // @media screen and (min-width: 470px) {
+  //   padding-top: 120px;
+  // }
+  // @media screen and (min-width: 530px) {
+  //   padding-top: 155px;
+  // }
 }
 .about-container__pre-title {
   padding-left: 50px;
@@ -20,7 +23,7 @@
 }
 
 .about-container__pre-title::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 45%;
@@ -33,7 +36,7 @@
 
 .about-container__title {
   margin-top: 20px;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;

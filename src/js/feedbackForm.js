@@ -28,7 +28,7 @@ function feedbackFormHandle(e) {
   confirmButtonText: 'Cool'
 })
     } else {
-             Swal.fire({
+    Swal.fire({
   title: 'Thank you, our manager will contact you soon.',
   icon: 'success',
                  confirmButtonText: 'Cool'
