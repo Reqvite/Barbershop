@@ -4,7 +4,7 @@
 }
 
 .section-benefits__pre-title::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 45%;
@@ -28,9 +28,14 @@
 
 .section-benefits__list {
   display: grid;
-  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-template-columns: auto;
   gap: 30px;
   margin-top: 44px;
+
+  @media screen and (min-width: 350px) {
+    grid-template-columns: auto auto;
+  }
 }
 .benefits-list__item {
   padding: 20px 35px;
@@ -54,7 +59,7 @@
 }
 
 .benefits-list__numbers::after {
-  content: "+";
+  content: '+';
   color: $accent-color;
   position: absolute;
   top: 0;

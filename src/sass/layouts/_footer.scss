@@ -1,0 +1,42 @@
+.footer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.main-social-list {
+  display: flex;
+  justify-content: end;
+  padding-left: 50px;
+  position: relative;
+}
+.main-social-list::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 45%;
+  right: 45%;
+  height: 1px;
+  width: 60px;
+  background-color: #303030;
+}
+
+.main-social-list__item {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.35;
+
+  letter-spacing: 0.2em;
+  color: $text-color;
+
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
+}
+
+.footer__copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.35;
+  letter-spacing: 0.2em;
+  color: $secondary-text-color;
+}

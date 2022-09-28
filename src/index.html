@@ -18,6 +18,20 @@
         <svg class="logo" width="69" height="56">
           <use href="./img/sprite.svg#icon-Logo"></use>
         </svg>
+        <nav class="desk-menu">
+          <ul class="list desk-menu__list">
+            <li class="desk-menu__item"><a href="" class="link desk-menu__link">About Us</a></li>
+            <li class="desk-menu__item"><a href="" class="link desk-menu__link">Services and prices</a></li>
+            <li class="desk-menu__item"><a href="" class="link desk-menu__link">Masters</a></li>
+            <li class="desk-menu__item"><a href="" class="link desk-menu__link">Contacts</a></li>
+          </ul>
+          <div class="desk-menu__thumb">
+             <button class="btn desk-menu__button">Book now</button>
+             <a href="tel:+442211223311" class="link navbar-mobile__telephone"
+              >+44 221 122 33 11</a
+            >
+          </div>
+        </nav>
         <button class="mobile-menu-btn">
           <svg class="menu-icon" width="30" height="30">
             <use href="./img/sprite.svg#icon-menu_40px"></use>
@@ -404,7 +418,63 @@
           </ul>
         </div>
       </section>
+      <section class="section section-feedback">
+        <div class="container section-feedback__container">
+          <h2 class="title section-feedback__titlte">Online record</h2>
+          <form class="section-feedback__form">
+            <label>
+              <input type="text" name="name" placeholder="Name*" />
+            </label>
+            <label>
+              <input type="number" name="tel" placeholder="Telephone*" />
+            </label>
+            <label>
+              <textarea name="text" rows="3" placeholder="Message"></textarea>
+            </label>
+            <button class="btn section-feedback__btn" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="section section-contacts">
+        <div class="container">
+          <h2 class="title section-contacts__title">Contacts</h2>
+          <ul class="list section-contacts__list">
+            <li class="contacts-list__item">
+              <svg class="contacts-list__img" width="24" height="24">
+                <use href="./img/sprite.svg#icon-location"></use></svg
+              ><a href="" class="link contacts-list__link">London, UK</a>
+            </li>
+            <li class="contacts-list__item">
+              <svg class="contacts-list__img" width="24" height="24">
+                <use href="./img/sprite.svg#icon-mobile"></use></svg
+              <a href="tel:+442211223311" class="link contacts-list__link"
+                >+44 221 122 33 11
+              </a>
+            </li>
+            <li class="contacts-list__item">
+              <svg class="contacts-list__img" width="24" height="24">
+                <use href="./img/sprite.svg#icon-envelop"></use></svg
+              <a href="mailto:barbershop@email.com" class="link contacts-list__link"
+                >barbershop@email.com</a
+              >
+            </li>
+          </ul>
+          <p class="pre-title section-contacts__pre-title">Working hours</p>
+          <p class="section-contacts__time">Daily with 9:00 to 22:00</p>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+      <ul class="list main-social-list">
+        <li class="main-social-list__item"><a href="" class="link main-social-list__link">Instagram</a></li>
+        <li class="main-social-list__item"><a href="" class="link main-social-list__link">Youtube</a></li>
+      </ul>
+      <p class="footer__copyright">&#169;Copyright 2020</p>
+      </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

@@ -4,11 +4,14 @@
 }
 
 .header-container {
-  position: relative;
   display: flex;
   align-items: center;
 }
 .logo {
+  fill: white;
+  @include desktop {
+    fill: black;
+  }
 }
 
 .mobile-menu-btn {
@@ -112,4 +115,44 @@
   height: 1px;
   width: 50px;
   background-color: #303030;
+}
+
+//desktop
+
+.desk-menu {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+  margin-left: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.desk-menu__list {
+  display: flex;
+}
+.desk-menu__item {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: white;
+
+  &:not(:first-child) {
+    margin-left: 24px;
+  }
+}
+
+.link {
+}
+.desk-menu__link {
+}
+.desk-menu__thumb {
+  margin-left: 44px;
+}
+.btn {
+}
+.desk-menu__button {
+}
+.navbar-mobile__telephone {
 }
