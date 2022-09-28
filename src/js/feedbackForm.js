@@ -28,15 +28,15 @@ function feedbackFormHandle(e) {
   confirmButtonText: 'Cool'
 })
     } else {
+             Swal.fire({
+  title: 'Thank you, our manager will contact you soon.',
+  icon: 'success',
+                 confirmButtonText: 'Cool'
+             })
             console.log(feedbackFormData);
           e.currentTarget.reset();
           localStorage.removeItem(STORAGE_KEY);
         formData = {};
-                Swal.fire({
-  title: 'Thank you, our manager will contact you soon.',
-  icon: 'success',
-  confirmButtonText: 'Cool'
-})
     }    
 }
 
