@@ -1,6 +1,6 @@
 
 const mobileMenuBtnRef = document.querySelector('.mobile-menu-btn');
-const mobileMenuRef = document.querySelector('.navbar-mobile');
+const mobileMenuRef = document.querySelector('.navbar-mobile'); 
 const crossRef = document.querySelector('.icon-cross');
 
 
@@ -27,7 +27,10 @@ function smoothScroll() {
     for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault()
-    
+        mobileMenuRef.classList.remove('is-active');
+        mobileMenuBtnRef.classList.remove('is-active')
+        crossRef.classList.remove('visible');
+        document.querySelector('body').style.overflow = 'visible'; 
         const blockID = anchor.getAttribute('href').substring(1)
     
         document.getElementById(blockID).scrollIntoView({
