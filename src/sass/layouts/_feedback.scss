@@ -3,6 +3,18 @@
 }
 
 .section-feedback__container {
+  @include desktop {
+    width: 50%;
+  }
+}
+
+.feedback-form__thumb {
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .section-feedback__titlte {
@@ -13,6 +25,12 @@
   flex-direction: column;
   align-items: center;
   margin-top: 44px;
+
+  & label:first-child {
+    @include tablet {
+      margin-right: 20px;
+    }
+  }
 
   & label:not(:first-child) {
     margin-top: 44px;
@@ -50,9 +68,22 @@
       color: white;
     }
   }
+
+  & textarea {
+    @include tablet {
+      width: 560px;
+    }
+  }
 }
 
 .section-feedback__btn {
   margin-top: 44px;
   color: white;
+}
+
+.feedback-contacts-flex {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+  }
 }

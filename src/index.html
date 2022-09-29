@@ -21,23 +21,30 @@
         <nav class="desk-menu">
           <ul class="list desk-menu__list">
             <li class="desk-menu__item">
-              <a href="" class="link desk-menu__link">About Us</a>
+              <a href="#about" class="link desk-menu__link">About Us</a>
             </li>
             <li class="desk-menu__item">
-              <a href="" class="link desk-menu__link">Services and prices</a>
+              <a href="#price" class="link desk-menu__link"
+                >Services and prices</a
+              >
             </li>
             <li class="desk-menu__item">
-              <a href="" class="link desk-menu__link">Masters</a>
+              <a href="#masters" class="link desk-menu__link">Masters</a>
             </li>
             <li class="desk-menu__item">
-              <a href="" class="link desk-menu__link">Contacts</a>
+              <a href="#contacts" class="link desk-menu__link">Contacts</a>
             </li>
           </ul>
           <div class="desk-menu__thumb">
-            <button class="btn desk-menu__button">Book now</button>
+            <button class="btn desk-menu__button">
+              Book now
+              <svg class="icon-btn" width="20" height="20">
+                <use href="./img/sprite.svg#icon-scissors"></use>
+              </svg>
+            </button>
             <a href="tel:+442211223311" class="link navbar-mobile__telephone"
-              >+44 221 122 33 11</a
-            >
+              >+44 221 122 33 11
+            </a>
           </div>
         </nav>
         <button class="mobile-menu-btn">
@@ -55,34 +62,43 @@
           <div class="navbar-mobile__links">
             <ul class="list mobile-list">
               <li class="mobile-list__item">
-                <a href="" class="link mobile-list__link">About us</a>
+                <a href="#about" class="link mobile-list__link">About us</a>
               </li>
               <li class="mobile-list__item">
-                <a href="" class="link mobile-list__link"
+                <a href="#price" class="link mobile-list__link"
                   >Services and prices</a
                 >
               </li>
               <li class="mobile-list__item">
-                <a href="" class="link mobile-list__link">Masters</a>
+                <a href="#masters" class="link mobile-list__link">Masters</a>
               </li>
               <li class="mobile-list__item">
-                <a href="" class="link mobile-list__link">Contacts</a>
+                <a href="#contacts" class="link mobile-list__link">Contacts</a>
               </li>
             </ul>
             <a href="tel:+442211223311" class="link navbar-mobile__telephone"
               >+44 221 122 33 11</a
             >
-            <button class="btn navbar-mobile__button">Book now</button>
+            <button class="btn navbar-mobile__button">
+              Book now
+              <svg class="icon-btn" width="20" height="20">
+                <use href="./img/sprite.svg#icon-scissors"></use>
+              </svg>
+            </button>
             <ul class="list mobile-social">
               <li class="mobile-social__item">
                 <a
-                  href=""
+                  href="https://www.instagram.com/"
                   class="link mobile-social__link mobile-social__link-first"
                   >Instagram</a
                 >
               </li>
               <li class="mobile-social__item">
-                <a href="" class="link mobile-social__link">YouTube</a>
+                <a
+                  href="https://www.youtube.com/feed/subscriptions"
+                  class="link mobile-social__link"
+                  >YouTube</a
+                >
               </li>
             </ul>
           </div>
@@ -104,7 +120,6 @@
             src="./img/hero/heroMobile1.jpg"
             alt="Barber-example-1"
             class="hero-photo img1"
-            height="480"
           />
         </picture>
         <picture>
@@ -121,7 +136,6 @@
             src="./img/hero/heroMobile2.jpg"
             alt="Barber-example-2"
             class="hero-photo img2"
-            height="480"
           />
         </picture>
         <picture>
@@ -137,10 +151,25 @@
             src="./img/hero/heroMobile3.jpg"
             alt="Barber-example-3"
             class="hero-photo img3"
-            height="480"
           />
         </picture>
         <div class="container hero-container">
+          <ul class="list main-social-list hero-social">
+            <li class="main-social-list__item hero-social">
+              <a
+                href="https://www.instagram.com/"
+                class="link main-social-list__link hero-social"
+                >Instagram</a
+              >
+            </li>
+            <li class="main-social-list__item hero-social">
+              <a
+                href="https://www.youtube.com/"
+                class="link main-social-list__link hero-social"
+                >Youtube</a
+              >
+            </li>
+          </ul>
           <div class="hero-container__content">
             <p class="pre-title hero-container__pre-title">
               A hair salon for men in London
@@ -153,25 +182,64 @@
           </div>
         </div>
       </section>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="container about-container">
-          <p class="pre-title about-container__pre-title">About Us</p>
-          <h2 class="about-container__title">The best barbershop Your city</h2>
-          <p class="about-container__info">
-            If you want to add more confidence to your image - you are
-            definitely to us.
-          </p>
-          <p class="about-container__more-info">
-            We are a team that never stops at what has been achieved and longs
-            for changes. And when you get In the hands of our master, you can
-            never be the same. We are a team that is always with customers "on
-            the same wave". Therefore, we are always ready to improve everyone
-            who comes to us!
-          </p>
-          <button class="btn about-btn">Book now</button>
+          <ul class="list about-container__list">
+            <li class="about-container__item">
+              <picture>
+                <source
+                  srcset="./img/about/aboutTablet1.jpg"
+                  media="(min-width: 0px) and (max-width: 1229.98px)" />
+                <source
+                  srcset="./img/about/aboutDesk1.jpg"
+                  media="(min-width: 1230px )" />
+                <img
+                  src="./img/about/aboutTablet1.jpg"
+                  alt="Example 1"
+                  class="about-container__img"
+              /></picture>
+            </li>
+            <li class="about-container__item">
+              <picture>
+                <source
+                  srcset="./img/about/aboutTablet2.jpg"
+                  media="(min-width: 0px) and (max-width: 1229.98px)" />
+                <source
+                  srcset="./img/about/aboutDesk2.jpg"
+                  media="(min-width: 1230px )" />
+                <img
+                  src="./img/about/aboutTablet2.jpg"
+                  alt="Example 2"
+                  class="about-container__img"
+              /></picture>
+            </li>
+          </ul>
+          <div class="about-container__thumb">
+            <p class="pre-title about-container__pre-title">About Us</p>
+            <h2 class="about-container__title">
+              The best barbershop Your city
+            </h2>
+            <p class="about-container__info">
+              If you want to add more confidence to your image - you are
+              definitely to us.
+            </p>
+            <p class="about-container__more-info">
+              We are a team that never stops at what has been achieved and longs
+              for changes. And when you get In the hands of our master, you can
+              never be the same. We are a team that is always with customers "on
+              the same wave". Therefore, we are always ready to improve everyone
+              who comes to us!
+            </p>
+            <button class="btn about-btn">
+              Book now
+              <svg class="icon-btn" width="20" height="20">
+                <use href="./img/sprite.svg#icon-scissors"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="section section-prices">
+      <section class="section section-prices" id="price">
         <div class="container">
           <p class="pre-title section-prices__pre-title">
             Spend time in the company of the best masters
@@ -214,20 +282,29 @@
                 <span class="price">£10</span>
               </li>
             </ul>
-            <button class="btn section-prices__btn">Book now</button>
+            <button class="btn section-prices__btn">
+              Book now
+              <svg class="icon-btn" width="20" height="20">
+                <use href="./img/sprite.svg#icon-scissors"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
       <section class="section section-benefits">
-        <div class="container">
-          <p class="pre-title section-benefits__pre-title">
-            Old traditional school
-          </p>
-          <h2 class="title section-benefits__title">Why do they come to us?</h2>
-          <p class="section-benefits__text">
-            Only good talk about us. But it is better to see and feel 1 time
-            than read 10 times.
-          </p>
+        <div class="container container-benefits">
+          <div class="container-benefits__thumb">
+            <p class="pre-title section-benefits__pre-title">
+              Old traditional school
+            </p>
+            <h2 class="title section-benefits__title">
+              Why do they come to us?
+            </h2>
+            <p class="section-benefits__text">
+              Only good talk about us. But it is better to see and feel 1 time
+              than read 10 times.
+            </p>
+          </div>
           <ul class="list section-benefits__list">
             <li class="benefits-list__item">
               <span class="benefits-list__numbers" data-num="600">0</span>
@@ -248,16 +325,25 @@
           </ul>
         </div>
       </section>
-      <section class="section section-masters">
-        <div class="container">
+      <section class="section section-masters" id="masters">
+        <div class="container container-masters">
           <p class="pre-title section-masters__pre-title">
             For real atmosphere connoisseurs
           </p>
           <h2 class="title section-masters__title">Our masters</h2>
           <ul class="list section-masters__list">
             <li class="masters-list__item">
-              <picture class="masters-list__img"
-                ><img src="./img/masters/img1mobile.jpg" alt="John Smith"
+              <picture class="masters-list__img">
+                <source
+                  srcset="./img/masters/img1mobile.jpg"
+                  media="(min-width: 0px ) and (max-width: 767px)" />
+                <source
+                  srcset="./img/masters/img1tablet.jpg"
+                  media="(min-width: 768.98px) and (max-width: 1229.98px)" />
+                <source
+                  srcset="./img/masters/img1desk.jpg"
+                  media="(min-width: 1230px )" />
+                <img src="./img/masters/img1mobile.jpg" alt="John Smith"
               /></picture>
               <div class="masters-list-info">
                 <h3 class="masters-list__name">John Smith</h3>
@@ -297,8 +383,17 @@
               </div>
             </li>
             <li class="masters-list__item">
-              <picture class="masters-list__img"
-                ><img src="./img/masters/img2mobile.jpg" alt="Michele Doe"
+              <picture class="masters-list__img">
+                <source
+                  srcset="./img/masters/img2mobile.jpg"
+                  media="(min-width: 0px ) and (max-width: 767px)" />
+                <source
+                  srcset="./img/masters/img2tablet.jpg"
+                  media="(min-width: 768.98px) and (max-width: 1229.98px)" />
+                <source
+                  srcset="./img/masters/img2desk.jpg"
+                  media="(min-width: 1230px )" />
+                <img src="./img/masters/img2mobile.jpg" alt="Michele Doe"
               /></picture>
               <div class="masters-list-info">
                 <h3 class="masters-list__name">Michele Doe</h3>
@@ -338,8 +433,17 @@
               </div>
             </li>
             <li class="masters-list__item">
-              <picture class="masters-list__img"
-                ><img src="./img/masters/img3mobile.jpg" alt="Alan Black"
+              <picture class="masters-list__img">
+                <source
+                  srcset="./img/masters/img3mobile.jpg"
+                  media="(min-width: 0px ) and (max-width: 767px)" />
+                <source
+                  srcset="./img/masters/img3tablet.jpg"
+                  media="(min-width: 768.98px) and (max-width: 1229.98px)" />
+                <source
+                  srcset="./img/masters/img3desk.jpg"
+                  media="(min-width: 1230px )" />
+                <img src="./img/masters/img3mobile.jpg" alt="Alan Black"
               /></picture>
               <div class="masters-list-info">
                 <h3 class="masters-list__name">Alan Black</h3>
@@ -382,14 +486,23 @@
         </div>
       </section>
       <section class="section section-examples">
-        <div class="container">
+        <div class="container container-example">
           <p class="pre-title section-examples__title">
             In Latin, “Barba” means “beard”
           </p>
           <ul class="list section-examples__list">
             <li class="list-examples__item">
-              <picture
-                ><img
+              <picture>
+                <source
+                  srcset="./img/examples/example1.jpg"
+                  media="(min-width: 0px ) and (max-width: 767px)" />
+                <source
+                  srcset="./img/examples/example1Tablet.jpg"
+                  media="(min-width: 768.98px) and (max-width: 1229.98px)" />
+                <source
+                  srcset="./img/examples/example1Desk.jpg"
+                  media="(min-width: 1230px )" />
+                <img
                   src="./img/examples/example1.jpg"
                   alt="Example 1"
                   class="list-examples__img"
@@ -397,8 +510,17 @@
               /></picture>
             </li>
             <li class="list-examples__item">
-              <picture
-                ><img
+              <picture>
+                <source
+                  srcset="./img/examples/example2.jpg"
+                  media="(min-width: 0px ) and (max-width: 767px)" />
+                <source
+                  srcset="./img/examples/example2Tablet.jpg"
+                  media="(min-width: 768.98px) and (max-width: 1229.98px)" />
+                <source
+                  srcset="./img/examples/example2Desk.jpg"
+                  media="(min-width: 1230px )" />
+                <img
                   src="./img/examples/example2.jpg"
                   alt="Example 2"
                   class="list-examples__img"
@@ -406,8 +528,17 @@
               /></picture>
             </li>
             <li class="list-examples__item">
-              <picture
-                ><img
+              <picture>
+                <source
+                  srcset="./img/examples/example3.jpg"
+                  media="(min-width: 0px ) and (max-width: 767px)" />
+                <source
+                  srcset="./img/examples/example3Tablet.jpg"
+                  media="(min-width: 768.98px) and (max-width: 1229.98px)" />
+                <source
+                  srcset="./img/examples/example3Desk.jpg"
+                  media="(min-width: 1230px )" />
+                <img
                   src="./img/examples/example3.jpg"
                   alt="Example 3"
                   class="list-examples__img"
@@ -415,8 +546,17 @@
               /></picture>
             </li>
             <li class="list-examples__item">
-              <picture
-                ><img
+              <picture>
+                <source
+                  srcset="./img/examples/example4.jpg"
+                  media="(min-width: 0px ) and (max-width: 767px)" />
+                <source
+                  srcset="./img/examples/example4Tablet.jpg"
+                  media="(min-width: 768.98px) and (max-width: 1229.98px)" />
+                <source
+                  srcset="./img/examples/example4Desk.jpg"
+                  media="(min-width: 1230px )" />
+                <img
                   src="./img/examples/example4.jpg"
                   alt="Example 4"
                   class="list-examples__img"
@@ -426,60 +566,71 @@
           </ul>
         </div>
       </section>
-      <section class="section section-feedback">
-        <div class="container section-feedback__container">
-          <h2 class="title section-feedback__titlte">Online record</h2>
-          <form class="section-feedback__form">
-            <label>
-              <input type="text" name="name" placeholder="Name*" />
-            </label>
-            <label>
-              <input type="number" name="tel" placeholder="Telephone*" />
-            </label>
-            <label>
-              <textarea name="text" rows="3" placeholder="Message"></textarea>
-            </label>
-            <button class="btn section-feedback__btn" type="submit">
-              Submit
-            </button>
-          </form>
-        </div>
-      </section>
-      <section class="section section-contacts">
-        <div class="container">
-          <h2 class="title section-contacts__title">Contacts</h2>
-          <ul class="list section-contacts__list">
-            <li class="contacts-list__item">
-              <svg class="contacts-list__img" width="24" height="24">
-                <use href="./img/sprite.svg#icon-location"></use></svg
-              ><a href="" class="link contacts-list__link">London, UK</a>
-            </li>
-            <li class="contacts-list__item">
-              <svg class="contacts-list__img" width="24" height="24">
-                <use href="./img/sprite.svg#icon-mobile"></use>
-              </svg>
-              <a href="tel:+442211223311" class="link contacts-list__link"
-                >+44 221 122 33 11
-              </a>
-            </li>
-            <li class="contacts-list__item">
-              <svg class="contacts-list__img" width="24" height="24">
-                <use href="./img/sprite.svg#icon-envelop"></use>
-              </svg>
-              <a
-                href="mailto:barbershop@email.com"
-                class="link contacts-list__link"
-                >barbershop@email.com</a
-              >
-            </li>
-          </ul>
-          <p class="pre-title section-contacts__pre-title">Working hours</p>
-          <p class="section-contacts__time">Daily with 9:00 to 22:00</p>
-        </div>
-      </section>
+      <div class="feedback-contacts-flex">
+        <section class="section section-feedback">
+          <div class="container section-feedback__container">
+            <h2 class="title section-feedback__titlte">Online record</h2>
+            <form class="section-feedback__form">
+              <div class="feedback-form__thumb">
+                <label>
+                  <input type="text" name="name" placeholder="Name*" />
+                </label>
+                <label>
+                  <input type="number" name="tel" placeholder="Telephone*" />
+                </label>
+              </div>
+              <label>
+                <textarea name="text" rows="3" placeholder="Message"></textarea>
+              </label>
+              <button class="btn section-feedback__btn" type="submit">
+                Submit
+                <svg class="icon-btn" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-scissors"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </section>
+        <section class="section section-contacts" id="contacts">
+          <div class="container container-contacts">
+            <div class="section-contacts__thumb-contacts">
+              <h2 class="title section-contacts__title">Contacts</h2>
+              <ul class="list section-contacts__list">
+                <li class="contacts-list__item">
+                  <svg class="contacts-list__img" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-location"></use></svg
+                  ><a href="" class="link contacts-list__link">London, UK</a>
+                </li>
+                <li class="contacts-list__item">
+                  <svg class="contacts-list__img" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-mobile"></use>
+                  </svg>
+                  <a href="tel:+442211223311" class="link contacts-list__link"
+                    >+44 221 122 33 11
+                  </a>
+                </li>
+                <li class="contacts-list__item">
+                  <svg class="contacts-list__img" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-envelop"></use>
+                  </svg>
+                  <a
+                    href="mailto:barbershop@email.com"
+                    class="link contacts-list__link"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="section-contacts__thumb-time">
+              <p class="pre-title section-contacts__pre-title">Working hours</p>
+              <p class="section-contacts__time">Daily with 9:00 to 22:00</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container container-footer">
         <ul class="list main-social-list">
           <li class="main-social-list__item">
             <a href="" class="link main-social-list__link">Instagram</a>
@@ -488,7 +639,7 @@
             <a href="" class="link main-social-list__link">Youtube</a>
           </li>
         </ul>
-        <p class="footer__copyright">&#169;Copyright 2020</p>
+        <p class="footer__copyright">&#169;Copyright 2022</p>
       </div>
     </footer>
     <script src="index.js" type="module"></script>

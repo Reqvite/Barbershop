@@ -1,5 +1,7 @@
 .btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   background-color: transparent;
   width: 194px;
@@ -7,4 +9,17 @@
 
   border: 1px solid #ff6c00;
   border-radius: 25px;
+
+  transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.icon-btn {
+  fill: currentColor;
+  margin-left: 10px;
 }

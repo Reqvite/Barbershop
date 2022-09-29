@@ -3,6 +3,17 @@
   position: relative;
 }
 
+.container-benefits {
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.container-benefits__thumb {
+  margin-left: 130px;
+  width: 50%;
+}
+
 .section-benefits__pre-title::before {
   content: '';
   display: block;
@@ -42,9 +53,10 @@
   max-width: 210px;
   height: 133px;
   background-color: #f7f7f7;
-}
 
-.benefits-list__item:nth-child(1) {
+  &:nth-child(1) {
+    // grid-column: 0.5 / 3;
+  }
 }
 
 .benefits-list__numbers {

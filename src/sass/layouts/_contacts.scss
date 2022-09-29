@@ -1,7 +1,35 @@
 .section-contacts {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.439), rgb(0, 0, 0)),
-    url(../img/footer/bgtablet.jpg);
-  background-repeat: no-repeat;
+  @media screen and (max-width: 1229.98px) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.7) 100%
+      ),
+      url(../img/footer/bgtablet.jpg);
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.7) 100%
+      ),
+      url(../img/footer/Bgdesk.jpg);
+  }
+}
+
+.container-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+  }
+  @include desktop {
+    flex-direction: column;
+    width: 625px;
+  }
 }
 
 .section-contacts__title {
@@ -20,8 +48,15 @@
   letter-spacing: 0.02em;
   color: $secondary-text-color;
 
+  transition: color 2000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
   &:not(:first-child) {
     margin-top: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
 .contacts-list__img {
@@ -49,6 +84,15 @@
   height: 1px;
   width: 45px;
   background-color: rgba(157, 164, 189, 0.4);
+}
+
+.section-contacts__thumb-time {
+  @include tablet {
+    margin-left: auto;
+  }
+  @include desktop {
+    margin-left: 0;
+  }
 }
 .section-contacts__time {
   margin-top: 20px;

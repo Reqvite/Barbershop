@@ -1,7 +1,22 @@
 .section-prices {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.439), rgb(0, 0, 0)),
-    url(../img/prices/imgtablet.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (max-width: 767.98px) {
+    background-image: linear-gradient(
+        180deg,
+        #090b13 0%,
+        rgba(9, 11, 19, 0.2) 100%
+      ),
+      url(../img/prices/imgtablet.jpg);
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        180deg,
+        #090b13 0%,
+        rgba(9, 11, 19, 0.5) 100%
+      ),
+      url(../img/prices/imgdesk.jpg);
+  }
 }
 
 .section-prices__pre-title {
@@ -10,7 +25,7 @@
   position: relative;
 }
 .section-prices__pre-title::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 45%;
@@ -29,9 +44,25 @@
 
 .section-prices__list {
   background-color: rgba(1, 7, 42, 0.141);
+  @include desktop {
+    background: linear-gradient(
+      90deg,
+      rgb(9, 11, 19, 0.1) 0%,
+      rgba(9, 11, 19, 0.2) 50%,
+      rgba(1, 7, 42, 0.141) 51%,
+      rgba(62, 62, 79, 0.5) 100%
+    );
+  }
+  display: block;
   padding: 30px 40px;
   margin-top: 44px;
-  max-width: 400px;
+  width: 50vw;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 1170px;
+  }
 }
 .prices-list__item {
   position: relative;
@@ -41,9 +72,30 @@
   line-height: 2.14;
   letter-spacing: 0.02em;
   color: $secondary-text-color;
+
+  &:nth-child(odd) {
+    @include desktop {
+      margin-right: 40px;
+    }
+  }
+
+  &:nth-child(2n) {
+    @include desktop {
+      margin-left: 20px;
+    }
+  }
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+  &:nth-child(2) {
+    @include desktop {
+      margin-top: 0;
+    }
+  }
 }
+
 .prices-list__item:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: 20%;
@@ -51,9 +103,7 @@
   height: 1px;
   background-color: rgba(157, 164, 189, 0.12);
 }
-.prices-list__item:not(:first-child) {
-  margin-top: 20px;
-}
+
 .prices-list__text {
   position: relative;
 }

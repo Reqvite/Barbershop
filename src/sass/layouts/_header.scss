@@ -2,6 +2,7 @@
   position: absolute;
   padding-top: 40px;
   width: 100%;
+  z-index: 50;
 }
 
 .header-container {
@@ -11,16 +12,27 @@
 .logo {
   fill: white;
   @include desktop {
+    width: 80px;
+    height: 100px;
     fill: black;
   }
 }
 
 .mobile-menu-btn {
+  @include tablet {
+    display: none;
+  }
   position: relative;
+
   margin-left: auto;
   background-color: transparent;
   border-color: transparent;
   z-index: 101;
+}
+
+.mobile-menu-btn.is-active {
+  position: fixed;
+  left: 80%;
 }
 
 .menu-icon {
@@ -42,6 +54,10 @@
 
   transform: translateX(110%);
   transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .navbar-mobile.is-active {
@@ -69,6 +85,7 @@
     line-height: 1.38;
     letter-spacing: 0.1em;
   }
+
   &__item:not(:first-child) {
     margin-top: 24px;
 
@@ -86,6 +103,23 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   white-space: nowrap;
+
+  display: block;
+  margin-top: 20px;
+
+  @include tablet {
+    color: whitesmoke;
+  }
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  @include desktop {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .navbar-mobile__button {
   margin-top: 24px;
@@ -124,39 +158,62 @@
   @media screen and (max-width: 767.98px) {
     display: none;
   }
-  margin-left: 64px;
-  display: flex;
-  align-items: center;
+  @include tablet {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    margin-left: 70px;
+  }
 }
 
 .desk-menu__list {
   display: flex;
 }
 .desk-menu__item {
+  position: relative;
+  white-space: nowrap;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   color: white;
 
+  @include desktop {
+    font-size: 18px;
+  }
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
   &:not(:first-child) {
     margin-left: 24px;
   }
+  &::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    transform: scale(0);
+    background-color: $accent-color;
+    transition: transform 2500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &:hover::after {
+    transform: scale(1);
+  }
 }
 
-.link {
-}
-.desk-menu__link {
-}
 .desk-menu__thumb {
-  margin-left: 44px;
+  @include tablet {
+    margin-left: auto;
+  }
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
 }
-.btn {
-}
+
 .desk-menu__button {
   color: white;
-}
-.navbar-mobile__telephone {
-  display: block;
-  margin-top: 20px;
 }
