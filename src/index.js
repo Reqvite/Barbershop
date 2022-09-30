@@ -6,3 +6,4 @@ import './js/heroPhoto';
 import './js/counterBenefits';
 import './js/dynamicPadding'
 import './js/feedbackForm';
+import './js/modal';
