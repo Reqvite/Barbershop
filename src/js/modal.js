@@ -22,7 +22,7 @@ const openModal = (e) => {
         backDropRef.classList.remove('is-hidden');
         modalRef.classList.add('is-open')
         window.addEventListener('keydown', closeModal)
-    } else if (e.target.getAttribute('class')?.includes('contacts-list__link')) {
+    } else if (e.target.getAttribute('class')?.includes('contacts-list__link-map')) {
         e.preventDefault()
             document.querySelector('body').style.overflow = 'hidden'; 
         modalMaps.classList.add('is-open');
