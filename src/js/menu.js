@@ -1,8 +1,6 @@
-
 const mobileMenuBtnRef = document.querySelector('.mobile-menu-btn');
 const mobileMenuRef = document.querySelector('.navbar-mobile'); 
 const crossRef = document.querySelector('.icon-cross');
-
 
 
 const openMenu = () => {

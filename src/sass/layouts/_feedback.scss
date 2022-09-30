@@ -40,7 +40,10 @@
   & textarea {
     padding-top: 10px;
     padding-bottom: 10px;
-    min-width: 270px;
+    min-width: 200px;
+    @media screen and (min-width: 471px) {
+      min-width: 280px;
+    }
     border: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
     color: white;

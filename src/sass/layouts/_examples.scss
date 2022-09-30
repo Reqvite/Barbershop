@@ -1,6 +1,3 @@
-.section-examples {
-}
-
 .container-example {
   display: flex;
   flex-direction: column;
@@ -9,17 +6,18 @@
 .section-examples__title {
   position: relative;
   padding-left: 50px;
-}
-.section-examples__title::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 45%;
-  left: -10px;
 
-  height: 1px;
-  width: 45px;
-  background-color: #303030;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: -10px;
+
+    height: 1px;
+    width: 45px;
+    background-color: #303030;
+  }
 }
 
 .section-examples__list {
