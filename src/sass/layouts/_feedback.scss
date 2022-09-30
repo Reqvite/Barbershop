@@ -25,6 +25,9 @@
   flex-direction: column;
   align-items: center;
   margin-top: 44px;
+  @media screen and (max-width: 500px) {
+    font-size: 3vw;
+  }
 
   & label:first-child {
     @include tablet {
@@ -33,6 +36,9 @@
   }
 
   & label:not(:first-child) {
+    @media screen and (max-width: 500px) {
+      margin-top: 22px;
+    }
     margin-top: 44px;
   }
 
@@ -80,6 +86,10 @@
 }
 
 .section-feedback__btn {
+  @media screen and (max-width: 500px) {
+    width: 40vw;
+  }
+
   margin-top: 44px;
   color: white;
 }
