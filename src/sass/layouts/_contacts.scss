@@ -53,7 +53,11 @@
   &:not(:first-child) {
     margin-top: 20px;
   }
+}
 
+.contacts-list__link {
+  display: flex;
+  align-items: center;
   &:hover,
   &:focus {
     color: $accent-color;
@@ -62,6 +66,11 @@
 .contacts-list__img {
   margin-right: 16px;
   fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .contacts-list__link {

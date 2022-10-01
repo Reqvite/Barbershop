@@ -33,21 +33,24 @@
   &:not(:first-child) {
     margin-left: 40px;
   }
-}
-.main-social-list__item:hover,
-.main-social-list__item:focus {
-  color: $accent-color;
+
+  &:not(:last-child)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45%;
+    right: 80px;
+    height: 1px;
+    width: 60px;
+    background-color: #303030;
+  }
 }
 
-.main-social-list__item:not(:last-child)::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 45%;
-  right: 80px;
-  height: 1px;
-  width: 60px;
-  background-color: #303030;
+.main-social-list__link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .footer__copyright {
