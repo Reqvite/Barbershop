@@ -42,7 +42,7 @@ function feedbackFormHandle(e) {
             console.log(feedbackFormData);
           e.currentTarget.reset();
           localStorage.removeItem(STORAGE_KEY);
-        formData = {};
+        feedbackFormData = {};
     }   
     }))
       
