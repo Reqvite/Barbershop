@@ -3,7 +3,6 @@ import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 
 const feedbackForm = document.querySelectorAll('.section-feedback__form')
-
 const STORAGE_KEY = "feedbackForm";
 
 addEventListener()
@@ -14,20 +13,25 @@ function addEventListener() {
     }))
 }
 
-
 let feedbackFormData = {};
 
 checkLocalStorage()
 
 function getData(e) {
     feedbackFormData[e.target.name] = e.target.value;
+    console.log(feedbackFormData.name);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(feedbackFormData));
+     feedbackForm.forEach((el => {
+            el[0].value = feedbackFormData.name || '';
+        el[1].value = feedbackFormData.tel || '';
+        el[2].value = feedbackFormData.text || '';
+        }))
+        
 }
 
 function feedbackFormHandle(e) {
     e.preventDefault()
-    feedbackForm.forEach((el => {
-       if (el[0].value === '' || el[1].value === '') {
+       if (feedbackFormData.name === undefined || feedbackFormData.tel === undefined) {
         Swal.fire({
   title: 'Please fill in the fields (name and telephone are required).',
   icon: 'info',
@@ -39,13 +43,15 @@ function feedbackFormHandle(e) {
   icon: 'success',
                  confirmButtonText: 'Cool'
              })
-            console.log(feedbackFormData);
-          e.currentTarget.reset();
+           console.log(feedbackFormData);
+           feedbackForm.forEach((el => {
+                       el.reset();  
+           }))
           localStorage.removeItem(STORAGE_KEY);
-        feedbackFormData = {};
+           feedbackFormData = {};
+           
     }   
-    }))
-      
+     
 }
 
 function checkLocalStorage() {
